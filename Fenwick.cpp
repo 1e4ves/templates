@@ -26,7 +26,7 @@ struct Fenwick {
         return ans;
     }
 
-    //树状数组二分
+    //树状数组倍增
     int kth(T k) {
         int x = 0;
         for (int i = 1 << __lg(n); i; i /= 2) {
